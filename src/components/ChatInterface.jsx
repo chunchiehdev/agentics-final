@@ -19,7 +19,7 @@ const STORAGE_KEYS = {
   MESSAGES: "chatMessages",
 };
 
-const API_BASE_URL = "http://140.115.126.192:3001";
+const API_BASE_URL = "http://localhost:3001";
 
 const ChatInterface = () => {
   const [message, setMessage] = useState("");
@@ -74,7 +74,7 @@ const ChatInterface = () => {
 
   // 建立 WebSocket 連接並處理實時更新
   const setupWebSocketConnection = (taskId, messageId) => {
-    const wsUrl = `ws://140.115.126.192:3001/ws/${taskId}`;
+    const wsUrl = `ws://localhost:3001/ws/${taskId}`;
     const ws = new WebSocket(wsUrl);
 
     ws.onopen = () => {
