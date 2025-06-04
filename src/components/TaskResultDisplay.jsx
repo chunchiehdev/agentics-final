@@ -18,7 +18,7 @@ import "../styles/TaskResultDisplay.css";
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
-const API_BASE_URL = "http://localhost:3001";
+const API_BASE_URL = "http://140.115.126.192:3001";
 
 const TaskResultDisplay = ({ taskStatus, onRetry }) => {
   const [previewModal, setPreviewModal] = useState({
